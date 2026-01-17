@@ -83,9 +83,13 @@ This will automatically start:
  - Pure Pursuit Controller
 - RViz visualization
 
-## Results
-The times for each segment
 <img width="2313" height="1288" alt="image" src="https://github.com/user-attachments/assets/ac39b70d-9f7f-41b2-aaa3-904364052561" />
+
+## Results
+The times for each segment are
+- x₀ to p₁ = 61.6074 s
+- p₁ to p₂ = 103.7251 s
+- p₂ to p₃ = 71.2302 s
 
 <img width="2292" height="1288" alt="image" src="https://github.com/user-attachments/assets/29041fce-0289-4d8b-9930-c56e6d273455" />
 
