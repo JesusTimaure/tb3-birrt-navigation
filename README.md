@@ -10,6 +10,8 @@ The robot must autonomously navigate through a cluttered environment and reach a
 - p₃ = [5.25, 5.5] (≤ 75 s, optimal ≈ 51 s)
 
 Coordinates are expressed in meters in the Gazebo world frame.
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/f4cc9c91-d825-4c9f-bf58-6d0c9e6b66b9" />
+
 
 ## Motivation
 Sampling-based planners such as RRT are well-suited for high-dimensional and cluttered environments.
@@ -53,9 +55,20 @@ Given a path:
 - A lookahead point at a "Lookahead distance" $`L_d`$ is selected
 - Curvature is computed as:
 
-$`{k=(2sin(alpha))\over L_d}`$
+$`k={2sin(α)\over L_d}`$
+
+$`α`$ is the heading error and the control commands are:
+$`v=v_ref, ω=v*k`$
+
+## Dependencies
+
+## Execution
+
+## Results
 
 <img width="918" height="641" alt="image" src="https://github.com/user-attachments/assets/ffaa2063-1a4b-4fd1-bd23-33abd7af1739" />
 
 <img width="2313" height="1288" alt="image" src="https://github.com/user-attachments/assets/ac39b70d-9f7f-41b2-aaa3-904364052561" />
+
+<img width="2292" height="1288" alt="image" src="https://github.com/user-attachments/assets/29041fce-0289-4d8b-9930-c56e6d273455" />
 
