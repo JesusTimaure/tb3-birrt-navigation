@@ -23,12 +23,19 @@ The Pure Pursuit controller was selected for local trajectory tracking because:
 
 ## System Architecture
 The navigation system is organized as a modular ROS pipeline:
+- **Mission Scheduler (Goal Manager Node)**
+  - Sends one target waypoint at a time to the planner
+  - Ensures sequental execution of p₁ → p₂ → p₃ and the intermediate waypoints between them
+- **Global Planner (Bi-RRT Node)**
+  - Computes collision-free paths between successive goals
+- **Local Planner Node**
+  - Refines the global path and selects tracking points
+- **Controller Node (Pure Pursuit)**
+  - Tracks the local trajectory
+  - Outputs velocity commands to the robot
+This structure separates task sequencing, planning, and control, mirroring real-world autonomy pipelines.
 
-Mission Scheduler (Goal Manager Node)
-
-Sends one target waypoint at a time to the planner
-
-Ensures sequential execution of p₁ → p₂ → p₃
+Ensures sequential execution of 
 
 Global Planner (Modified Bi-RRT Node)
 
