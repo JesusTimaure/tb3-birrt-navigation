@@ -56,12 +56,15 @@ Given a path:
 - Curvature is computed as:
 
 <p align="center">
-$k={2sin(α)\over L_d}$
+  $k={2sin(α)\over L_d}$
 </p>
+
+<img width="918" height="641" alt="image" src="https://github.com/user-attachments/assets/ffaa2063-1a4b-4fd1-bd23-33abd7af1739" />
 
 $`α`$ is the heading error and the control commands are:
 <p align="center">
-$v=v_ref_ , ω=v*k$
+  v=v_ref
+  ω=v*k
 </p>
 
 ## Dependencies
@@ -69,8 +72,6 @@ $v=v_ref_ , ω=v*k$
 ## Execution
 
 ## Results
-
-<img width="918" height="641" alt="image" src="https://github.com/user-attachments/assets/ffaa2063-1a4b-4fd1-bd23-33abd7af1739" />
 
 <img width="2313" height="1288" alt="image" src="https://github.com/user-attachments/assets/ac39b70d-9f7f-41b2-aaa3-904364052561" />
 
